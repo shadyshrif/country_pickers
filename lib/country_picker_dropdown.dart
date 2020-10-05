@@ -18,7 +18,6 @@ class CountryPickerDropdown extends StatefulWidget {
     this.selectedItemBuilder,
     this.isDense = false,
     this.underline,
-    this.dropdownColor,
     this.icon,
     this.iconDisabledColor,
     this.iconEnabledColor,
@@ -64,9 +63,6 @@ class CountryPickerDropdown extends StatefulWidget {
 
   /// Selected country widget builder to display. See [selectedItemBuilder] of [DropdownButton]
   final ItemBuilder selectedItemBuilder;
-
-  /// See [dropdownColor] of [DropdownButton]
-  final Color dropdownColor;
 
   /// See [icon] of [DropdownButton]
   final Widget icon;
@@ -148,7 +144,6 @@ class _CountryPickerDropdownState extends State<CountryPickerDropdown> {
       iconSize: widget.iconSize,
       iconDisabledColor: widget.iconDisabledColor,
       iconEnabledColor: widget.iconEnabledColor,
-      dropdownColor: widget.dropdownColor,
       underline: widget.underline ?? SizedBox(),
       isDense: widget.isDense,
       isExpanded: widget.isExpanded,
